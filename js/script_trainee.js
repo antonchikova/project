@@ -2,6 +2,7 @@
 
 // Условия 
 
+
 // if (4 === 4) {
 //     console.log('OK');
 // }
@@ -94,17 +95,109 @@
 
 // МЕТОДЫ И СВОЙСТВА 
 
-const str = 'test method';
+// const str = 'test method';
 
-console.log(str.indexOf('e'));
+// console.log(str.indexOf('e'));
 
 
-const nameOfPerson = 'Olga Antonchikova';
-console.log(nameOfPerson.slice(5, 10));
-console.log(nameOfPerson.substr(5, 5));
+// const nameOfPerson = 'Olga Antonchikova';
+// console.log(nameOfPerson.slice(5, 10));
+// console.log(nameOfPerson.substr(5, 5));
 
-const num = 12.5;
-console.log(Math.round(num));
+// const num = 12.5;
+// console.log(Math.round(num));
+
+// МАССИВЫ
+
+// const arr = [1, 59, 3, 49, 5];
+// arr.sort(compareNum);
+// console.log(arr);
+
+// function compareNum(a, b) {
+//     return a - b;
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// arr.forEach(function(item,i,arr){
+//     console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
+
+
+// const str = prompt('','');
+// const products = str.split(', ');
+
+// console.log(products.join(', '));
+
+
+// ПЕРЕДАЧА ПО ССЫЛКЕ ИЛИ ПО ЗНАЧЕНИЮ. spread оператор
+
+// let a = 5,
+//     b = a;
+
+// b = b + 5;
+
+// console.log(a);
+// console.log(b);
+
+// const obj = {
+//     a: 1,
+//     b: 4
+// };
+
+// const copy=obj;
+
+// copy.a=10;
+// console.log(obj);
+// console.log(copy);
+
+// function copy(mainObj) {
+//     let objCopy = {};
+//     let key;
+
+//     for (key in mainObj) {
+//         objCopy[key] = mainObj[key];
+//     }
+
+//     return objCopy;
+// }
+
+// const numbers = {
+//     a: 5,
+//     b: 6,
+//     x: {
+//         d: 7,
+//         r: 8
+//     }
+// };
+
+// const newNumbers = copy(numbers);
+// newNumbers.b = 12;
+
+// console.log(newNumbers);
+// console.log(numbers);
+
+// const add = {
+//     d:17,
+//     i:20
+// };
+
+
+// console.log(Object.assign(numbers , add)); 
+
+const obj = {
+    a: 1,
+    b: 4
+};
+
+const meObj = { ...obj };
+meObj.a = 10;
+console.log(meObj);
+console.log(obj);
+
+
 
 
 
